@@ -28,6 +28,11 @@
 		<classes>
 			<class name="testCases.changePassword_TestCases" />
 		</classes>
+		</test>
+		<test thread-count="6" name="reward points">
+		<classes>
+			<class name="testCases.rewards_TestCases" />
+		</classes>
 	</test>
 	<!-- Test -->
 </suite> <!-- Suite -->

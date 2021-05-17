@@ -12,26 +12,18 @@ public class pageRedirection_POF {
 	}
 	
 	 @FindBy(how = How.LINK_TEXT, using = "Bonuses") 
-	 private WebElement Bonuses;
+	 private WebElement bonuse;
 	 
 	 @FindBy(how = How.LINK_TEXT, using = "Tourney Tickets") 
 	 private WebElement tourneyTickets;
 	 
-	 @FindBy(how = How.LINK_TEXT, using = "Refer a Friend") 
-	 private WebElement referAfriend;
+	 ///@FindBy(how = How.LINK_TEXT, using = "Redeem Code") 
+	 //private WebElement redeem;
 	 
-	 @FindBy(how = How.LINK_TEXT, using = "Change Password") 
-	 private WebElement changePassword;
+	 @FindBy(how = How.LINK_TEXT, using = " My account") 
+	 private WebElement myaccounts;
 	 
-	 @FindBy(how = How.LINK_TEXT, using = "Deposit") 
-	 private WebElement Deposit;
-	 
-	 @FindBy(how = How.LINK_TEXT, using = "Withdrawal") 
-	 private WebElement Withdrawal;
-	 
-	 @FindBy(how = How.LINK_TEXT, using = "Rewards") 
-	 private WebElement Rewards;
-	 
+	
 	 @FindBy(how = How.LINK_TEXT, using = "Transactions") 
 	 private WebElement Transactions;
 	 
@@ -45,7 +37,7 @@ public class pageRedirection_POF {
 	 private WebElement RAFBonusSummary;
 	 
 	 @FindBy(how = How.LINK_TEXT, using = "Bonus") 
-	 private WebElement Bonus;
+	 private WebElement bonuses;
 	 
 	 @FindBy(how = How.LINK_TEXT, using = "History") 
 	 private WebElement History;
@@ -53,25 +45,27 @@ public class pageRedirection_POF {
 	 @FindBy(how = How.LINK_TEXT, using = "Tournament History") 
 	 private WebElement tournamentHistory;
 	 
+	 @FindBy(how = How.LINK_TEXT, using = " Mid stake Mania") 
+	 private WebElement  Mania;
+	 
+	 
 	 @FindBy(how = How.LINK_TEXT, using = "lgout") 
 	 private WebElement logout;
 	 
 	 
 	 public void redirectionAction () {
-		 Bonus.click();
+		 bonuse.click();
 		 tourneyTickets.click();
-		 referAfriend.click();
-		 changePassword.click();
-		 Deposit.click();
-		 Withdrawal.click();
-		 Rewards.click();
+		 //redeem.click();
+		 //myaccounts.click();
 		 Transactions.click();
 		 purchaseSummary.click();
 		 withdrawSummary.click();
 		 RAFBonusSummary.click();
-		 Bonus.click();
+		 bonuses.click();
 		 History.click();
 		 tournamentHistory.click();
+		 Mania.click();
 		 logout.click();
 		 
 	 }
