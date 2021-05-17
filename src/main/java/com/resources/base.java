@@ -22,7 +22,7 @@ public class base {
 	public static Logger log = LogManager.getLogger(base.class.getName());
 
 	public WebDriver intializeDriver() throws IOException {
-		Properties	prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
 				"C:\\Users\\sarath\\RB\\RummyBaaziProject\\src\\main\\java\\com\\resources\\data.properties");
 		prop.load(fis);
@@ -31,7 +31,12 @@ public class base {
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\sarath\\Downloads\\RummyBaaziProject\\lib\\chromedriver.exe");
+					
+					"C:\\Users\\sarath\\Desktop\\New folder\\chromedriver.exe");
+					
+					
+					//
+					//"C:\\Users\\sarath\\Downloads\\RummyBaaziProject\\lib\\New folder\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		}
