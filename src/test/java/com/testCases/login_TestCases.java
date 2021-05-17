@@ -18,7 +18,6 @@ public class login_TestCases extends base {
 	@Test()
 	public void Login() throws IOException {
 		driver = intializeDriver();
-		//driver.get("https://www.rummybaazi.com/");
 		driver.get(prop.getProperty("url"));
 		Reporter.log("RummyBaazi Site Opens");
 
